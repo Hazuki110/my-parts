@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+.box {
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
+  margin: 40px 20px;
+  background: #eee;
+}
+
+/* 最初は透明で、少し下にある */
+.js-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+/* is-show が付いたら、元の位置に戻って見える */
+.js-fade.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; }
+
+.fv {
+  position: relative;
+  height: 100vh;
+  background: #2c2c2c;
+}
+
+.fv__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 0.2em;
+
+  /* 動き出す前は透明にしておく */
+  opacity: 0;
+  /* 名前 かかる時間 動き方 待ち時間 終わったらそのまま */
+  animation: fadeIn 1.5s ease 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ハンバーガーメニュー</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <p class="logo">LOGO</p>
+
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="global-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="global-nav">
+        <ul class="nav__list">
+          <li><a href="#a">メニュー1</a></li>
+          <li><a href="#b">メニュー2</a></li>
+          <li><a href="#c">メニュー3</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p class="text">ボタンを押してみてください</p>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
