@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".header__nav");
 const navLinks = nav.querySelectorAll("a");
 
 function setMenu(isOpen) {
