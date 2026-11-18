@@ -1,0 +1,59 @@
+ <!-- -------- Contact -------- -->
+      <section id="contact">
+        <div class="contact__form" data-reveal>
+          <div class="title__space">
+            <h2>Contact</h2>
+          </div>
+          <p>制作のご相談・お問い合わせはこちらから。</p>
+
+          <form class="form" action="send.php" method="post" novalidate>
+            <div class="form__row">
+              <label for="name">お名前</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                maxlength="50"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form__row">
+              <label for="email">メールアドレス</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+              />
+            </div>
+            <div class="form__row">
+              <label for="message">お問い合わせ内容</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                maxlength="3000"
+              ></textarea>
+            </div>
+
+            <!-- スパム対策: 人間には見えない欄 -->
+            <div class="form__hp" aria-hidden="true">
+              <label
+                >この欄は空のままにしてください
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+
+            <button class="contact__btn" type="submit">送信する</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
